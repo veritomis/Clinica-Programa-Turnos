@@ -20,22 +20,14 @@
   <link rel="stylesheet" href="Style/style.css">
 </head>
 <body>
-
-  <!-- FullCalendar JS -->
-  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
-
-  <!-- Tu script -->
-  <script src="JS/"></script>
-
-
+        <header></header>
+         <main>
     <div class="grid-container">
         <h1 class="titulo">Agenda Turnos Médicos</h1>
         <h3 class="subtitulo">Elija fecha y hora</h3>
     </div>
     <div id="calendar"></div>
 
-    <body>
-      <header class="cabecera">
         <div class="info-profesional">
           <img src="avatar.jpg" alt="Doctora" class="avatar">
           <div>
@@ -49,9 +41,8 @@
           <button onclick="semanaSiguiente()">→</button>
           <input type="date" onchange="irADiaSeleccionado(this.value)">
         </div>
-      </header>
-    
-      <main class="agenda">
+  
+  
         <div class="dia-columna">
           <h3>Martes 13</h3>
           <div class="turno ocupado">08:30 - Maidan Sabrina</div>
@@ -63,10 +54,10 @@
           <h3>Miércoles 14</h3>
           <div class="turno disponible" onclick="seleccionarTurno(this)">09:00 - Disponible</div>
         </div>
-    
-        <!-- Más días -->
-      </main>
-    
+
+         </main>
+       <footer></footer>
+       <script src="JS/vnavegacion.js"></script>
       <script src="JS"></script>
     </body>
     </html>
