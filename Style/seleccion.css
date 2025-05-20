@@ -3,7 +3,8 @@ body {
     /*place-items: center; /* Centra vertical y horizontalmente */
     background-color: beige;
     color: black;
-    background-image: url('/img/Tu\ Historia\ Centro.png');
+    background-image: url("../img/Tu\ Historia\ Centro.png");
+    background-size: cover;
   }
   
   .grid-container {
