@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Paciente</title>
+    <link rel="shortcut icon" href="./img/Logo_clinica.ico" type="image/x-icon">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,15 +34,21 @@
             <div class="form-group">
               <label for="documento">Documento</label>
               <input type="text" class="form-control" id="documento" aria-describedby="documento" placeholder="Documento">
-              <small id="documento" class="form-text text-muted">complete el nº de documento sin puntos</small>
+              <small id="documento" class="form-text text-muted" style="text-align: center;">Complete el nº de documento sin puntos</small>
             </div>
             <div class="form-group">
               <label for="fechaNacimiento">Fecha de Nacimiento</label>
               <input type="date" class="form-control" id="fechaNacimiento" aria-describedby="fechaNacimiento" placeholder="Fecha de Nacimiento">            
             </div>
+
+            <div class="form-group">
+              <label for="telefono">Telefono</label>
+              <input type="tel" class="form-control" id="telefono" aria-describedby="telefono" placeholder="Número de telefono">            
+            </div>
+
             <div class="form-group mb-3">
-               
-              <label for="rol">Selecciona su obra social o particular:</label>
+               <br>
+              <label for="rol">Selecciona su cobertura médica: </label>
               <select id="obraSocial" name="Obra Social">
                 <option value="particular">Particular</option>
                 <option value="Osecac">Osecac</option>
@@ -51,7 +58,7 @@
                 <option value="Transporte">Transporte</option>
                 <option value="Plastico">Del Plástico</option>
               </select>
-              <small id="documento" class="form-text text-muted">seleccione la obra social del paciente</small>             
+              <small id="documento" class="form-text text-muted" style="text-align: center;">Seleccione la cobertura médica del paciente</small>             
             </div>
             
             <a href="registro-exitoso-paciente.html" class="btn btn-primary mt-4">Guardar</a>
