@@ -4,7 +4,7 @@ body {
     background-color: beige;
     color: black;
     background-image: url("../img/Tu\ Historia\ Centro.png");
-  
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
   }
   
   .grid-container {

@@ -1,6 +1,7 @@
 
 document.querySelector("Header").innerHTML = `
-<nav class="navbar navbar-expand-sm bg-light">
+
+   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="selec.html">Clinica Se Price</a>
                 <ul class="navbar-nav">
@@ -16,4 +17,5 @@ document.querySelector("Header").innerHTML = `
                 </ul>
             </div>
         </nav>
-` 
+
+`

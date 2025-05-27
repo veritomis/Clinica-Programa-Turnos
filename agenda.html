@@ -4,60 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agenda Turnos Medicos</title>
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Roboto&display=swap" rel="stylesheet">
-
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- FullCalendar CSS -->
   <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
-
   <!-- Tu propio CSS -->
   <link rel="stylesheet" href="Style/style.css">
 </head>
 <body>
-        <header></header>
-         <main>
+  <header></header>
+
+  <main>
     <div class="grid-container">
-        <h1 class="titulo">Agenda Turnos Médicos</h1>
-        <h3 class="subtitulo">Elija fecha y hora</h3>
+      <h1 class="titulo">Agenda Turnos Médicos</h1>
+      <h3 class="subtitulo">Elija fecha y hora</h3>
     </div>
     <div id="calendar"></div>
+    <div class="info-profesional">
+      <img src="avatar.jpg" alt="Doctora" class="avatar">
+      <div>
+        <h2>Dra. Martínez María Paz</h2>
+        <p>Endocrinología Adultos</p>
+      </div>
+    </div>
+    <div class="navegacion-fechas">
+      <button onclick="semanaAnterior()">←</button>
+      <button onclick="mostrarSemanaActual()">Hoy</button>
+      <button onclick="semanaSiguiente()">→</button>
+      <input type="date" onchange="irADiaSeleccionado(this.value)">
+    </div>
+    <div class="dia-columna">
+      <h3>Martes 13</h3>
+      <div class="turno ocupado">08:30 - Maidan Sabrina</div>
+      <div class="turno ocupado">09:00 - Duarte Andrea</div>
+      <div class="turno disponible" onclick="seleccionarTurno(this)">10:30 - Disponible</div>
+    </div>
+    <div class="dia-columna">
+      <h3>Miércoles 14</h3>
+      <div class="turno disponible" onclick="seleccionarTurno(this)">09:00 - Disponible</div>
+    </div>
+  </main>
 
-        <div class="info-profesional">
-          <img src="avatar.jpg" alt="Doctora" class="avatar">
-          <div>
-            <h2>Dra. Martínez María Paz</h2>
-            <p>Endocrinología Adultos</p>
-          </div>
-        </div>
-        <div class="navegacion-fechas">
-          <button onclick="semanaAnterior()">←</button>
-          <button onclick="mostrarSemanaActual()">Hoy</button>
-          <button onclick="semanaSiguiente()">→</button>
-          <input type="date" onchange="irADiaSeleccionado(this.value)">
-        </div>
-  
-  
-        <div class="dia-columna">
-          <h3>Martes 13</h3>
-          <div class="turno ocupado">08:30 - Maidan Sabrina</div>
-          <div class="turno ocupado">09:00 - Duarte Andrea</div>
-          <div class="turno disponible" onclick="seleccionarTurno(this)">10:30 - Disponible</div>
-        </div>
-    
-        <div class="dia-columna">
-          <h3>Miércoles 14</h3>
-          <div class="turno disponible" onclick="seleccionarTurno(this)">09:00 - Disponible</div>
-        </div>
+  <footer></footer>
 
-         </main>
-       <footer></footer>
-       <script src="JS/vnavegacion.js"></script>
-      <script src="JS"></script>
-    </body>
-    </html>
+  <script src="JS/vnavegacion.js"></script>
+  <script src="JS"></script>
+</body>
+</html>

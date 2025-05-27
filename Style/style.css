@@ -27,4 +27,17 @@
     /*min-height: 100vh; /* Ocupa toda la altura de la ventana */
   }
   
-  
+  .login-con-bordes {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  margin-top: 50px; /* o la cantidad que necesites */
+  padding: 20px 0;
+}
