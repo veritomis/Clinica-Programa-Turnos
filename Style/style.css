@@ -10,8 +10,10 @@
   }
 
   .titulo{
-    margin-top: 50px;
-    margin-bottom: 2px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 4em;
+    font-weight: 700;
   }
   .subtitulo {
     padding-top: 50px;
@@ -40,4 +42,52 @@
 footer {
   margin-top: 50px; /* o la cantidad que necesites */
   padding: 20px 0;
+}
+.info-profesional h2{
+  margin: 20px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.info-profesional p {
+  margin: 20px;
+  margin-top: 0px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.navegacion-fechas{
+  margin: 20px;
+  padding: 10px;
+}
+
+.dia-columna{
+  margin: 20px;
+  padding: 10px;
+  border: #ffffff solid 1px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 80vh;
+}
+
+.turno-ocupado{
+  margin: 6px;
+  padding: 2px;
+  background-color: rgb(4, 8, 134);
+  color: white;
+}
+
+.turno-disponible{
+  margin: 6px;
+  padding: 2px;
+  background-color: rgb(0, 150, 153);
+  color: white;
+}
+
+.semana {
+  display: flex;
+  width: vh;
+  border: rgb(123, 1, 1) solid 5 px;
+  margin: 20px;
+  padding: 10px;
 }
