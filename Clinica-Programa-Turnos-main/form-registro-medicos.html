@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro Médicos</title>
+  <link rel="shortcut icon" href="./img/Logo_clinica.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="Style/style.css">
+</head>
+
+<body>
+  <Header>
+  </Header>
+  <Main>
+    <div class="grid-container">
+      <h1 class="titulo">Registro Médicos</h1> <!--pantalla 8-->
+      <h3 class="subtitulo">Complete el formulario</h3>
+    </div>
+    <div class="login-con-bordes">
+      <div class="login">
+        <form>
+          <div class="form-group">
+            <label for="Nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombrePaciente" aria-describedby="nombre" placeholder="Nombre">
+
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" class="form-control" id="apellidoPaciente" aria-describedby="apellido"
+              placeholder="Apellido">
+
+          </div>
+          <div class="form-group">
+            <label for="documento">Documento</label>
+            <input type="text" class="form-control" id="documento" aria-describedby="documento" placeholder="Documento">
+            <small id="documento" class="form-text text-muted">complete el nº de documento sin puntos</small>
+          </div>
+          <div class="form-group">
+            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+            <input type="date" class="form-control" id="fechaNacimiento" aria-describedby="fechaNacimiento"
+              placeholder="Fecha de Nacimiento">
+          </div>
+          <div class="form-group mb-3">
+            <label for="Especialidad">Seleccione la especialidad</label>
+            <select id="Especialidad" name="Especialidad" class="form-control">
+              <option value="clinica">Clínica Médica</option>
+              <option value="dentista">Odontología</option>
+              <option value="dermatologia">Dermatología</option>
+              <option value="kinesiologia">Kinesilogía</option>
+              <option value="traumatologia">Traumatologia</option>
+              <option value="cardiologia">Cardiología</option>
+              <option value="reumatología">Reumatología</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Mail</label>
+            <input type="email" class="form-control" id="email" aria-describedby="mail" placeholder="Mail">
+            <small id="mail" class="form-text text-muted">complete el mail que será su usuario</small>
+          </div>
+          <div class="form-group">
+            <label for="contraseña">Constraseña</label>
+            <input type="password" class="form-control" id="password" aria-describedby="contraseña"
+              placeholder="Contraseña">
+            <small id="contraseña" class="form-text text-muted">otorge la contraseña para el médico</small>
+          </div>
+          <a href="registro-exitoso-medico.html" class="btn btn-primary mt-4">Registro nuevo médico</a>
+        </form>
+      </div>
+    </div>
+  </Main>
+  <footer>
+    <div class="container">
+      <p class="text-center">© 2025 Clinica Se Price. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="JS/vnavegacion.js"></script>
+</body>
+
+</html>

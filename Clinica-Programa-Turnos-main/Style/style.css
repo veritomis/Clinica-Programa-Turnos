@@ -1,0 +1,93 @@
+  body {
+    display: grid;
+    /*place-items: center; /* Centra vertical y horizontalmente */
+    background-color: cornflowerblue;
+    color: black;
+  }
+  
+  .grid-container {
+    text-align: center; /* Opcional: centra texto */
+  }
+
+  .titulo{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 4em;
+    font-weight: 700;
+  }
+  .subtitulo {
+    padding-top: 50px;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+  }
+
+  .login {
+    margin-top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*min-height: 100vh; /* Ocupa toda la altura de la ventana */
+  }
+  
+  .login-con-bordes {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  margin-top: 50px; /* o la cantidad que necesites */
+  padding: 20px 0;
+}
+.info-profesional h2{
+  margin: 20px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.info-profesional p {
+  margin: 20px;
+  margin-top: 0px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.navegacion-fechas{
+  margin: 20px;
+  padding: 10px;
+}
+
+.dia-columna{
+  margin: 20px;
+  padding: 10px;
+  border: #ffffff solid 1px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 80vh;
+}
+
+.turno-ocupado{
+  margin: 6px;
+  padding: 2px;
+  background-color: rgb(4, 8, 134);
+  color: white;
+}
+
+.turno-disponible{
+  margin: 6px;
+  padding: 2px;
+  background-color: rgb(0, 150, 153);
+  color: white;
+}
+
+.semana {
+  display: flex;
+  width: vh;
+  border: rgb(123, 1, 1) solid 5 px;
+  margin: 20px;
+  padding: 10px;
+}
